@@ -12,7 +12,6 @@ var Breakout = new Phaser.Class({
 
   initialize: function Breakout() {
     Phaser.Scene.call(this, { key: "breakout" });
-    this.paddle;
   },
 
   preload: function () {

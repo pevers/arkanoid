@@ -16,6 +16,8 @@ python -m http.server 8000
 1. Different scores per brick
 1. Score based on time
 1. Random speed variations
+1. Change background
+1. Inpenetrable bricks
 
 ## Resources
 

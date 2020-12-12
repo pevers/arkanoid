@@ -62,7 +62,7 @@ var Breakout = new Phaser.Class({
     this.ball = this.physics.add
       .image(400, 500, "ball1")
       .setCollideWorldBounds(true)
-      .setBounce(1);
+      .setBounce(1.0);
 
     // Add physics between paddle and ball
     // https://photonstorm.github.io/phaser3-docs/Phaser.Physics.Arcade.Factory.html
@@ -134,12 +134,6 @@ var Breakout = new Phaser.Class({
 
   hitBricks: function (ball, brick) {
     brick.disableBody(true, true);
-  },
-
-  resetBall: function () {
-    this.ball.setVelocity(0);
-    this.ball.setPosition(this.paddle.x, 500);
-    this.onPaddle = true;
   },
 });
 
